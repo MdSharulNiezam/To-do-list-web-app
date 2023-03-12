@@ -189,6 +189,7 @@ input:checked ~ .bubble::after {
 
 .todo-list .todo-item {
     display: flex;
+    width: 100%;
     align-items: center;
     background-color: #FFFF;
     padding: 1rem;
