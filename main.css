@@ -210,7 +210,7 @@ input:checked ~ .bubble::after {
 .todo-item .todo-content input {
     width: 50%;
     color: var(--dark);
-    font-size: 1.125rem;
+    font-size: 0.85rem;
 }
 
 .todo-item .actions {
