@@ -212,7 +212,7 @@ input:checked ~ .bubble::after {
 }
 
 .todo-item .actions {
-    display: flex;
+    display: inline-block;
     align-items: center;
 }
 
