@@ -9,5 +9,3 @@ Additional Note: You can view desktop site on your mobile if you want to.
 4. Then click Add todo
 5. Finally it will appear on TODO LIST
 6. You can make change either Edit, Delete and click at radio button to checked the todolist if it's done.
-
-My first project following the tutorial from youtube video.
