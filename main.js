@@ -30,8 +30,8 @@ window.addEventListener('load', () => {
         e.target.reset()
 
         DisplayTodos();
-
     })
+    DisplayTodos();
 })
 
 function DisplayTodos () {
