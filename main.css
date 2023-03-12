@@ -237,6 +237,7 @@ input:checked ~ .bubble::after {
 }
 
 .todo-item .actions .delete {
+    margin-right: 1rem;
     background-color: var(--danger);
 }
 
