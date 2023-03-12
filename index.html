@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List 2023 Web application</title>
+
+    <!-- Link Font Style from fonts.google Monstserrat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;0,900;1,400&display=swap"
+        rel="stylesheet">
+
+    <!-- link css style -->
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <!-- This the start of making Web application called app -->
+    <main class="app">
+
+        <!-- This section is for greeting the users with input text to be save on local storage, so next time user open web application, it will remember the user -->
+        <section class="greeting">
+            <h2 class="title">
+                Welcome, <input type="text" id="name" placeholder="Name here">
+            </h2>
+        </section>
+
+        <!-- This section containing form is creating a todo list input text with category to be display to another section of todo list using javascript -->
+        <section class="create-todo">
+            <h3>CREATE TO DO</h3>
+            <hr>
+            <br>
+            <!-- todo form -->
+            <form id="new-todo-form">
+                <!-- Input text -->
+                <h4>What's on your todo list?</h4>
+                <input 
+                    type="text" 
+                    name="content" 
+                    id="content" 
+                    placeholder="e.g. make a video">
+
+                <!-- Radio button with 2 category include span for styling the button instead of using the default one -->
+                <h4>Pick a category</h4>
+                <div class="options">
+                    <label>
+                        <!-- Personal Radio Button -->
+                        <input 
+                            type="radio" 
+                            name="category" 
+                            id="category2" 
+                            value="personal">
+                        <span class="bubble personal"></span>
+                        <div>Personal</div>
+                    </label>
+
+                    <label>
+                        <!-- Work Radio Button -->
+                        <input 
+                            type="radio" 
+                            name="category" 
+                            id="category1" 
+                            value="work">
+                        <span class="bubble work"></span>
+                        <div>Work</div>
+                    </label>
+                </div>
+
+                <!-- A submit form -->
+                <input type="submit" value="Add todo">
+            </form>
+        </section>
+
+        <!-- Section for displaying todo-list -->
+        <section class="todo-list">
+            <h3>TODO LIST</h3>
+            <hr>
+            <div class="list" id="todo-list">
+
+                <!-- This is the example content to be put and style using CSS first, to see how things organize after Adding todo submit before implementing Javascript inside by creating HTML element and variable define using java-->
+
+                <!-- <div class="todo-item done">
+                    <label>
+                        <input type="checkbox">
+                        <span class="bubble work"></span>
+                    </label>
+                    <div class="todo-content">
+                        <input type="text" value="Make a video" readonly>
+                    </div>
+                    <div class="actions">
+                        <button class="edit">Edit</button>
+                        <button class="delete">Delete</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="list" id="todo-list">
+                <div class="todo-item">
+                    <label>
+                        <input type="checkbox">
+                        <span class="bubble personal"></span>
+                    </label>
+                    <div class="todo-content">
+                        <input type="text" value="Get a milk" readonly>
+                    </div>
+                    <div class="actions">
+                        <button class="edit">Edit</button>
+                        <button class="delete">Delete</button>
+                    </div>
+                </div>
+            </div> -->
+        </section>
+    </main>
+
+    <!-- link to javascript -->
+    <script src="main.js"></script>
+
+</body>
+</html>
