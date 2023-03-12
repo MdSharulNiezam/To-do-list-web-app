@@ -189,7 +189,6 @@ input:checked ~ .bubble::after {
 
 .todo-list .todo-item {
     display: flex;
-    width: 100%;
     align-items: center;
     background-color: #FFFF;
     padding: 1rem;
@@ -220,7 +219,7 @@ input:checked ~ .bubble::after {
 /* Edit and Delete button styling */
 
 .todo-item .actions button {
-    display: block;
+    display: flex;
     padding: 0.5rem;
     border-radius: 0.25rem;
     color: #FFF;
